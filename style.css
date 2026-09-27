@@ -1,0 +1,197 @@
+body {
+    background-image: url("pizza.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#nav-bar {
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    background-color: rgba(63, 63, 63, 0.9);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#list-bar {
+    display:flex;
+    justify-content:flex-end;
+    padding: 10px;
+    margin-right: 100px;
+    text-decoration: none;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial Narrow Bold', sans-serif;
+
+}
+
+#list-bar a:hover {
+    color: #ff4757;
+    transition: color 0.3s ease;
+}
+
+#logo-pizza {
+    height: 80px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+#slogan {
+    color: #ffffff; 
+    font-size: 14px; 
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+#search-input {
+    border-radius: 20px;
+    padding: 5px 15px; 
+    border: 1px solid #ccc;
+    font-family: sans-serif;
+}
+
+#search-form label {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+h1 {
+    color: white;
+    font-family: sans-serif;
+    padding-left: 50px;
+}
+
+#menu-pizze {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    padding-left: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+#menu-pizze li {
+    background-color: rgba(63, 63, 63, 0.9);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 180px; 
+    color: white;
+}
+
+#menu-pizze img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+#menu-pizze img:hover {
+    transform: scale(1.05);
+}
+
+.btn-carrello {
+    background-color: #ff4757; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-carrello:hover {
+    background-color: #ff6b81; 
+    transform: translateY(-2px); 
+}
+
+footer {
+    background-color: #2f2f2f; /* Stesso stile o simile alla navbar */
+    color: #ffffff;
+    padding: 10px 40px; /* Sottile e compatto come la navbar */
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.social-item img {
+    width: 20px; 
+    height: 20px;
+    object-fit: contain;
+}
+
+.social-item:hover {
+    color: #ff4757;
+}
+
+@media (max-width: 768px) {
+    
+    
+    #nav-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    
+    #menu-pizze {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    
+    #footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
